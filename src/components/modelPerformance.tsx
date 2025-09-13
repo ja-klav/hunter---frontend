@@ -10,6 +10,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { Download, BookOpen } from "lucide-react";
 
 import { useInView } from "react-intersection-observer";
 
@@ -70,10 +71,13 @@ function ModelPerformance() {
           turpis egestas.
         </div>
         <div className="flex flex-row gap-3 mt-12">
-          <button className="btn bg-primary text-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-8">
+          <button className="btn bg-primary text-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-4 flex items-center justify-center gap-2">
+            <Download className="w-5 h-5" />
             Download Model
           </button>
-          <button className="btn text-primary bg-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-8">
+
+          <button className="btn text-primary bg-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-4 flex items-center justify-center gap-2">
+            <BookOpen className="w-5 h-5" />
             Open Notebook
           </button>
         </div>

@@ -4,15 +4,17 @@ import PageHeader from "./components/pageHeader";
 import About from "./components/about";
 import ModelPerformance from "./components/modelPerformance";
 import Features from "./components/features";
+import Distribution from "./components/distribution";
 
 function App() {
   return (
-    <div className="min-h-screen body">
+    <div className="body">
       <AppNavbar />
       <PageHeader />
       <About />
       <ModelPerformance />
       <Features />
+      <Distribution/>
     </div>
   );
 }

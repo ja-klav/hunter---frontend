@@ -1,7 +1,53 @@
 import React from "react";
 
 function Features() {
-  return <div className="bg-black min-h-screen">features</div>;
+  return (
+    <div className="bg-black h-[50vh] flex flex-row justify-between items-center hidden md:flex gap-3">
+      {/* Left */}
+      <div className="w-2/5 flex flex-col h-full items-start justify-center ps-32">
+        <div className="text-white text-5xl font-bold font-heading">
+          Features
+        </div>
+        <div className="mt-3 text-gray-300 text-md">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus
+          magna, euismod vel dapibus id, pretium ut enim. Maecenas ut egestas
+          libero.
+        </div>
+      </div>
+      {/* Right */}
+      <div className="w-3/5 h-full flex flex-row gap-5 items-center justify-end text-white">
+        <div className="h-[calc(100%-60px)] bg-gray-300 rounded w-96 text-black cursor-pointer px-16 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+          {/* Heading */}
+          <div className="my-16 text-primary text-9xl font-bold font-heading">
+            1
+          </div>
+          <div className="text-xl font-semibold font-heading text-black">
+            Image Emotion Recognition
+          </div>
+          <div className="text-sm mt-2 font-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            risus magna, euismod vel dapibus id, pretium ut enim. Maecenas ut
+            egestas libero.
+          </div>
+        </div>
+
+        <div className="h-[calc(100%-60px)] bg-gray-300 rounded w-96 text-black cursor-pointer px-16 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+          {/* Heading */}
+          <div className="my-16 text-primary text-9xl font-bold font-heading">
+            2
+          </div>
+          <div className="text-xl font-semibold font-heading text-black">
+            Video Emotion Recognition
+          </div>
+          <div className="text-sm mt-2 font-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            risus magna, euismod vel dapibus id, pretium ut enim. Maecenas ut
+            egestas libero.
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Features;
