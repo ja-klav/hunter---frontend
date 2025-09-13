@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { SiReact, SiTensorflow, SiPython, SiTypescript } from "react-icons/si";
 import { WavyBackground } from "./ui/shadcn-io/wavy-background";
@@ -25,16 +25,16 @@ function PageHeader() {
       <WavyBackground
         backgroundFill="transparent"
         colors={["#ff6b6b", "#4ecdc4", "#45b7d1", "#96ceb4", "#feca57"]}
-        waveWidth={1}
-        blur={0.5}
+        waveWidth={8}
+        blur={0.3}
         speed="slow"
-        waveOpacity={0.003}
+        waveOpacity={0.3}
         containerClassName="absolute inset-0 h-full w-full"
         className="relative flex flex-col justify-center items-center"
       >
-        <div className="flex flex-col flex-1 justify-center items-center px-4">
+        <div className="flex flex-col flex-1 justify-center items-center px-4 mt-48">
           <motion.h1
-            className="text-6xl text-white font-heading font-bold text-center"
+            className="text-3xl sm:text-4xl md:text-6xl text-white font-heading font-bold text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
@@ -77,7 +77,7 @@ function PageHeader() {
           </motion.div>
           {/* Autoplay Carousel */}
           <motion.div
-            className="relative mt-32 overflow-hidden py-6 max-w-[calc(100vw-240px)]"
+            className="relative mt-32 overflow-hidden py-6 max-w-[calc(100vw-240px)] hidden sm:hidden md:block"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}

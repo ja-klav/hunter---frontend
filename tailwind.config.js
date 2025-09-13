@@ -7,6 +7,7 @@ module.exports = {
           gradientLeft: "#2c5364",
           gradientMid: "#203a43",
           gradientRight: "#0f2027",
+          primary: "#14262d",
         },
       fontFamily: {
         heading: ["Montserrat", "sans-serif"],
