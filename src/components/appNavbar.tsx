@@ -19,10 +19,18 @@ function AppNavbar() {
           tabIndex={0}
           className="menu dropdown-content bg-base-100 rounded-box z-10 w-52 p-2 shadow mt-2"
         >
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About the Project</a></li>
-          <li><a href="/">Scan Photo</a></li>
-          <li><a href="/">Scan Video</a></li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">About the Project</a>
+          </li>
+          <li>
+            <a href="/image">Scan Photo</a>
+          </li>
+          <li>
+            <a href="/">Scan Video</a>
+          </li>
         </ul>
       </div>
     </div>

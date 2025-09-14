@@ -1,6 +1,7 @@
 import React from "react";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { useInView } from "react-intersection-observer";
+import { Database } from "lucide-react";
 
 const data = [
   { name: "Surprise", value: 1850 },
@@ -35,7 +36,7 @@ function Distribution() {
       ref={ref}
       className="min-h-[60vh] flex flex-col md:flex-row items-center justify-start gap-8 py-12 px-4 md:px-24"
     >
-        {/* Hide on large screen */}
+      {/* Hide on large screen */}
       <div className="w-full md:w-1/3 flex flex-col md:hidden items-center md:items-start justify-center text-center md:text-left mt-8 md:mt-0">
         <div
           className={`text-3xl sm:text-4xl md:text-5xl text-blue-100 font-bold font-heading transition-all duration-700 ${
@@ -132,6 +133,10 @@ function Distribution() {
           magna, euismod vel dapibus id, pretium ut enim. Maecenas ut egestas
           libero.
         </div>
+        <button className="mt-6 px-6 py-3 rounded-full bg-white text-primary font-semibold flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+          <Database className="w-5 h-5" />
+          Checkout Dataset
+        </button>
       </div>
     </div>
   );
