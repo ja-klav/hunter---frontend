@@ -23,11 +23,13 @@ function About() {
       <div className="text-center font-bold font-heading text-blue-200 text-blue-200 text-3xl sm:text-4xl md:text-6xl">
         Trained with Disaster Data
       </div>
-      <div className="text-center font-heading text-white text-blue-300 mt-3 text-md sm:text-md md:text-lg">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-        suscipit turpis a luctus pretium. {<br></br>}Nunc dui arcu, dictum quis
-        imperdiet id,{" "}
-        <span className="font-semibold text-white">ultrices at metus.</span>
+      <div className="text-center font-heading text-white text-blue-300 mt-3 text-md sm:text-md md:text-lg px-3 md:px-64">
+        Our model has been trained on thousands of real-world disaster images,
+        capturing human emotions in some of the most challenging environments.
+        This ensures accurate emotion recognition even in{" "}
+        <span className="font-semibold text-white">
+          unpredictable situations.
+        </span>
       </div>
       {/* Cards */}
       <div
@@ -35,7 +37,7 @@ function About() {
         className="flex flex-row justify-center flex-wrap py-24 gap-3"
       >
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -50,7 +52,7 @@ function About() {
           </span>
         </motion.div>
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -65,7 +67,7 @@ function About() {
           </span>
         </motion.div>
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -80,7 +82,7 @@ function About() {
           </span>
         </motion.div>
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -95,7 +97,7 @@ function About() {
           </span>
         </motion.div>
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -110,7 +112,7 @@ function About() {
           </span>
         </motion.div>
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -125,7 +127,7 @@ function About() {
           </span>
         </motion.div>
         <motion.div
-          className="card shadow-sm w-96 h-72 bg-primary flex flex-col items-center justify-center"
+          className="card shadow-sm w-full md:w-96 h-72 bg-primary flex flex-col items-center justify-center mx-4 md:mx-0"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}

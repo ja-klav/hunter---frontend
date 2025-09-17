@@ -1,5 +1,5 @@
 import React from "react";
-import { lossData, accuracyData } from "../data/data";
+import { lossData, accuracyData } from "../../data/data";
 import {
   LineChart,
   Line,
@@ -34,49 +34,32 @@ function ModelPerformance() {
         <div className="text-3xl sm:text-4xl md:text-6xl text-white font-bold font-heading">
           ACCURATE
         </div>
-        <div className="pt-24 text-sm md:text-md text-white">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris risus
-          magna, euismod vel dapibus id, pretium ut enim. Maecenas ut egestas
-          libero. Aenean vel odio felis. In sed est convallis mauris facilisis
-          aliquam vitae sit amet nisl. Donec ultrices id purus sed pharetra.
-          Praesent tristique mi quis magna tempus tristique. Pellentesque sed
-          aliquam ligula.
+        <div className="pt-8 md:pt-16 text-sm md:text-md text-white leading-relaxed max-w-xl">
+          Our emotion detection model is optimized for speed and accuracy,
+          making it suitable for both real-time video streams and large-scale
+          image analysis.
         </div>
 
-        <div className="mt-4 text-sm md:text-md text-white">
-          Nam sodales mollis metus ut facilisis. Suspendisse vitae mauris ante.
-          Ut et interdum nisl, vel laoreet neque. Nunc orci diam, egestas eu
-          tempus vitae, pharetra eu nunc. Phasellus imperdiet odio et aliquet
-          placerat. Curabitur ullamcorper tellus elit, sed finibus sapien
-          vestibulum nec. Curabitur ut magna dictum, ultricies augue sed,
-          aliquet enim. Mauris dui elit, blandit et eros quis, luctus convallis
-          lorem. Nunc facilisis varius ornare. Nam sit amet augue felis. Quisque
-          vestibulum purus vel sodales varius. Morbi rhoncus elit eget vulputate
-          sagittis.
+        <div className="mt-4 text-sm md:text-md text-white leading-relaxed max-w-xl">
+          <strong>Accuracy steadily improves</strong> with each epoch, as shown
+          in the chart on the right. This demonstrates the model’s ability to
+          learn meaningful patterns and improve performance over time.
         </div>
 
-        <div className="mt-4 text-sm md:text-md text-white">
-          Sed eget risus lacinia, suscipit nisl non, dictum odio. Orci varius
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus. Curabitur iaculis finibus mi, nec scelerisque enim porta eget.
-          Donec condimentum, dolor commodo malesuada efficitur, leo ligula
-          vehicula nulla, et pulvinar ipsum dolor et mi. Nullam enim nibh,
-          rhoncus ac lectus vitae, condimentum finibus dui. Suspendisse tempus
-          eros eu aliquet rutrum. Vivamus in tortor dolor. Vestibulum in massa
-          suscipit, interdum lacus id, gravida enim. Maecenas hendrerit lectus
-          eu metus ullamcorper egestas. Curabitur fermentum urna vel mollis
-          suscipit. Quisque scelerisque metus eros, vel blandit quam consequat
-          at. Quisque dictum ligula nec tincidunt scelerisque. Pellentesque
-          habitant morbi tristique senectus et netus et malesuada fames ac
-          turpis egestas.
+        <div className="mt-4 text-sm md:text-md text-white leading-relaxed max-w-xl">
+          <strong>Training and validation loss</strong> decrease consistently
+          across epochs, indicating strong generalization without overfitting.
+          The close alignment between curves shows that the model performs well
+          on unseen data.
         </div>
+
         <div className="flex flex-row gap-3 mt-12">
-          <button className="btn bg-primary text-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-4 flex items-center justify-center gap-2">
+          <button className="btn bg-primary text-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-8 md:py-4 flex items-center justify-center gap-2">
             <Download className="w-5 h-5" />
             Download Model
           </button>
 
-          <button className="btn text-primary bg-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-4 flex items-center justify-center gap-2">
+          <button className="btn text-primary bg-white rounded-full border-none shadow-none mt-4 w-32 md:w-48 py-8 md:py-4 flex items-center justify-center gap-2">
             <BookOpen className="w-5 h-5" />
             Open Notebook
           </button>

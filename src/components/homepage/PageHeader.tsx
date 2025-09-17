@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { SiReact, SiTensorflow, SiPython, SiTypescript } from "react-icons/si";
-import { WavyBackground } from "./ui/shadcn-io/wavy-background";
+import { WavyBackground } from "../ui/shadcn-io/wavy-background";
 
 const images = [
   "img_1.jpg",
@@ -48,7 +48,9 @@ function PageHeader() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            Upload an image or video and let our AI detect emotions in real
+            time. {<br/>}Powered by deep learning and optimized for accuracy across
+            diverse scenarios.
           </motion.h5>
           <motion.div
             className="flex justify-center items-center gap-3"
@@ -56,7 +58,9 @@ function PageHeader() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.9, duration: 0.5 }}
           >
-            <button className="btn btn-lg mt-10">Classify Image</button>
+            <a className="btn btn-lg mt-10" href="/image">
+              Classify Image
+            </a>
             <button className="btn btn-lg mt-10">Classify Video</button>
           </motion.div>
 

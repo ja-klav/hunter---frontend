@@ -1,9 +1,9 @@
 import React from "react";
-import AppNavbar from "./components/appNavbar";
-import Footer from "./components/footer";
+import AppNavbar from "./components/struct/AppNavBar";
+import Footer from "./components/struct/Footer";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./HomePage";
-import ClassifyImage from "./components/classifyImage";
+import HomePageWrapper from "./components/homepage/HomePageWrapper";
+import ClassifyImageWrapper from "./components/classify_image/ClassifyImageWrapper";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <AppNavbar />
       <Routes>
         {/* Homepage */}
-        <Route path="/" element={<HomePage />} />
-        <Route path="/image" element={<ClassifyImage />} />
+        <Route path="/" element={<HomePageWrapper />} />
+        <Route path="/image" element={<ClassifyImageWrapper />} />
       </Routes>
       <Footer />
     </div>

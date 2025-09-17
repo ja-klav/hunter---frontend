@@ -3,7 +3,7 @@ import { AlignRight } from "lucide-react";
 
 function AppNavbar() {
   return (
-    <div className="navbar fixed top-0 left-0 w-full flex justify-between items-center lg:px-24 lg:py-6 md:px-10 md:py-4 sm:px-5 z-50">
+    <div className="navbar fixed top-0 left-0 w-full flex justify-between items-center lg:px-24 lg:py-6 md:px-10 md:py-4 sm:px-5 z-50 bg-gradient-to-r from-[#2c5364] via-[#203a43] to-[#0f2027]">
       <a className="flex flex-col items-start ml-4" href="/">
         <img src="/logo.svg" alt="logo" className="h-10 w-auto" />
       </a>
