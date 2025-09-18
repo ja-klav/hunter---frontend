@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 
-export interface Prediction {
+export interface FacePrediction {
+  face_id: number;
   label: string;
   score: number;
-  all_predictions?: { label: string; score: number }[];
-  image_base64: string
+  all_predictions: { label: string; score: number }[];
+  face_image_base64: string;   
+}
+
+export interface Prediction {
+  faces: FacePrediction[];
+  image_base64: string; 
 }
 
 export function useClassifyImage() {
