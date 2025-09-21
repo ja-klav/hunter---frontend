@@ -61,7 +61,9 @@ function PageHeader() {
             <a className="btn btn-lg mt-10" href="/image">
               Classify Image
             </a>
-            <button className="btn btn-lg mt-10">Classify Video</button>
+             <a className="btn btn-lg mt-10" href="/video">
+              Classify Video
+            </a>
           </motion.div>
 
           <motion.div

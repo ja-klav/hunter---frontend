@@ -9,6 +9,11 @@ export interface FacePrediction {
   face_image_base64: string;   
 }
 
+// ✅ Get BASE_URL from .env
+const BASE_URL = process.env.REACT_APP_BASE_URL
+
+console.log(BASE_URL)
+
 export interface Prediction {
   faces: FacePrediction[];
   image_base64: string; 
@@ -28,7 +33,7 @@ export function useClassifyImage() {
     formData.append("file", file);
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/predict/", {
+      const res = await fetch(`${BASE_URL}/predict/`, {
         method: "POST",
         body: formData,
       });
