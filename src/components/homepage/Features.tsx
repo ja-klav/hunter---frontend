@@ -34,7 +34,7 @@ function Features() {
           </div>
         </a>
 
-        <div className="h-[calc(100%-60px)] bg-gray-300 rounded w-96 text-black cursor-pointer px-16 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <a className="h-[calc(100%-60px)] bg-gray-300 rounded w-96 text-black cursor-pointer px-16 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
           {/* Heading */}
           <div className="my-16 text-primary text-9xl font-bold font-heading">
             2
@@ -47,7 +47,7 @@ function Features() {
             over time. Ideal for disaster response, behavioral analysis, and
             other scenarios where human emotion matters.
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
